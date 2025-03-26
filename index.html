@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+<body>
+
+
+    <div class="calculadora">
+        <input type="text" id="resultado" placeholder="calculando..." >
+        
+        <button type="button" id="uno" onclick="guardarNumero('1')">1</button> 
+        <button type="button" id="dos" onclick="guardarNumero('2')">2</button>
+        <button type="button" id="tres" onclick="guardarNumero('3')">3</button>
+        <button type="button" id="cuatro" onclick="guardarNumero('4')">4</button>
+        <button type="button" id="cinco" onclick="guardarNumero('5')">5</button>
+        <button type="button" id="seis" onclick="guardarNumero('6')">6</button>
+        <button type="button" id="siete" onclick="guardarNumero('7')">7</button>
+        <button type="button" id="ocho" onclick="guardarNumero('8')">8</button>
+        <button type="button" id="nueve" onclick="guardarNumero('9')">9</button>
+        <button type="button" id="cero" onclick="guardarNumero('0')">0</button>
+        <button type="button" id="mas" onclick="guardarOperacion('+')">+</button>
+        <button type="button" id="menos" onclick="guardarOperacion('-')">-</button>
+        <button type="button" id="coma" onclick="guardarNumero('.')">,</button>
+        <button type="button" id="dividido" onclick="guardarOperacion('/')">/</button>
+        <button type="button" id="por" onclick="guardarOperacion('*')">x</button>
+        <button type="button" id="AC" onclick="limpiarPantalla()">AC</button>
+        <button type="button" id="igual" onclick="calcular()">=</button>
+        <button type="button" id="modoClaro" onclick="cambiarModo()">b / w</button>
+    </div>
+    
+
+    <script src="funciones.js"></script>
+</body>
+</html>
